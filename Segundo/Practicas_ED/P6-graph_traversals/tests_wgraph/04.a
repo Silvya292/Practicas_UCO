@@ -1,0 +1,17 @@
+Created a graph with capacity = 6 and size=0
+Added node with data 'A'. Graph size =1
+Added node with data 'B'. Graph size =2
+Added node with data 'C'. Graph size =3
+Set weight of edge (A,B) to 1
+Set weight of edge (B,C) to 2
+Set weight of edge (B,A) to 5
+Set weight of edge (C,A) to 3
+Set weight of edge (C,B) to 4
+Incident edges on vertex 'A' :
+A -- 1 --> B
+Incident edges on vertex 'B' :
+B -- 5 --> A
+B -- 2 --> C
+Incident edges on vertex 'C' :
+C -- 3 --> A
+C -- 4 --> B

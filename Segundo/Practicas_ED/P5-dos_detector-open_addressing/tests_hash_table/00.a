@@ -1,0 +1,19 @@
+Created table with size: 16
+Inserted pair <150.214.110.3:3>
+load factor: 0.0625
+Inserted pair <150.214.117.157:1>
+load factor: 0.125
+Inserted pair <150.214.117.1:4>
+load factor: 0.1875
+Inserted pair <10.0.0.1:0>
+load factor: 0.25
+Inserted pair <127.0.0.1:10>
+load factor: 0.3125
+Inserted pair <67.26.255.255:2>
+load factor: 0.375
+Inserted pair <132.16.2.1:1>
+load factor: 0.4375
+Inserted pair <50.21.200.1:7>
+load factor: 0.5
+Table: [127.0.0.1:10 132.16.2.1:1 10.0.0.1:0 150.214.110.3:3 150.214.117.157:1 150.214.117.1:4 50.21.200.1:7 67.26.255.255:2 ]
+Table size: 16

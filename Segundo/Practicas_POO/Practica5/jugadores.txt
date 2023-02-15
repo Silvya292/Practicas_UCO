@@ -1,0 +1,4 @@
+44XX,jugador1,,,,,,,1000
+55XX,jugador2,,,,,,,1000
+77XX,jugador3,,,,,,,1000
+66XX,jugador4,,,,,,,1000

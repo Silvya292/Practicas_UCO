@@ -1,0 +1,155 @@
+\hypertarget{classSNode}{}\doxysection{SNode$<$ T $>$ Class Template Reference}
+\label{classSNode}\index{SNode$<$ T $>$@{SNode$<$ T $>$}}
+
+
+a single link node.  
+
+
+
+
+{\ttfamily \#include $<$slist.\+hpp$>$}
+
+\doxysubsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+typedef std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classSNode}{SNode}}$<$ T $>$ $>$ \mbox{\hyperlink{classSNode_ae3f625ceaa1eb1d654243e036ad68ed7}{Ref}}
+\begin{DoxyCompactList}\small\item\em Define a shared reference to a \mbox{\hyperlink{classSNode}{SNode}}. Manages the storage of a pointer, providing a limited garbage-\/collection facility, possibly sharing that management with other objects. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions}
+\begin{Indent}\textbf{ Observers.}\par
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classSNode_a66cb94abb3b9d56dff08da630ba534be}\label{classSNode_a66cb94abb3b9d56dff08da630ba534be}} 
+T \mbox{\hyperlink{classSNode_a66cb94abb3b9d56dff08da630ba534be}{item}} () const
+\begin{DoxyCompactList}\small\item\em Get the data item. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classSNode_ada740b3a4c6bd529b02ab9bc52cfc8a0}{has\+\_\+next}} () const
+\begin{DoxyCompactList}\small\item\em Has it a next node?. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classSNode_ac6791c141a15f5c71b326587e4ef8b2b}\label{classSNode_ac6791c141a15f5c71b326587e4ef8b2b}} 
+\mbox{\hyperlink{classSNode}{SNode}}$<$ T $>$\+::\mbox{\hyperlink{classSNode_ae3f625ceaa1eb1d654243e036ad68ed7}{Ref}} \mbox{\hyperlink{classSNode_ac6791c141a15f5c71b326587e4ef8b2b}{next}} () const
+\begin{DoxyCompactList}\small\item\em Get the link to next element. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\end{Indent}
+\begin{Indent}\textbf{ Modifiers.}\par
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classSNode_a3f178401425b27cfeacd1174f42ec965}\label{classSNode_a3f178401425b27cfeacd1174f42ec965}} 
+void \mbox{\hyperlink{classSNode_a3f178401425b27cfeacd1174f42ec965}{set\+\_\+item}} (const T \&new\+\_\+it)
+\begin{DoxyCompactList}\small\item\em Set the data item. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classSNode_ae9a8678faaca5734e09a8661ebabc7ff}\label{classSNode_ae9a8678faaca5734e09a8661ebabc7ff}} 
+void \mbox{\hyperlink{classSNode_ae9a8678faaca5734e09a8661ebabc7ff}{set\+\_\+next}} (\mbox{\hyperlink{classSNode}{SNode}}$<$ T $>$\+::\mbox{\hyperlink{classSNode_ae3f625ceaa1eb1d654243e036ad68ed7}{Ref}} \mbox{\hyperlink{classSNode_ac6791c141a15f5c71b326587e4ef8b2b}{next}})
+\begin{DoxyCompactList}\small\item\em Set the link to the next node. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\end{Indent}
+\doxysubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classSNode_a394d42895c23f86c1d472e0095d1559a}\label{classSNode_a394d42895c23f86c1d472e0095d1559a}} 
+T {\bfseries \+\_\+item}
+\item 
+\mbox{\Hypertarget{classSNode_a7ffdde7541b93b5b0a7968a8dbf73bf0}\label{classSNode_a7ffdde7541b93b5b0a7968a8dbf73bf0}} 
+\mbox{\hyperlink{classSNode}{SNode}}$<$ T $>$\+::\mbox{\hyperlink{classSNode_ae3f625ceaa1eb1d654243e036ad68ed7}{Ref}} {\bfseries \+\_\+next}
+\end{DoxyCompactItemize}
+\doxysubsection*{Life cicle.}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classSNode_af914da9f986f4befba47c1662a5bb725}{SNode}} (T const \&it)
+\begin{DoxyCompactList}\small\item\em Create a node. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classSNode_a153d2588fdbcdd9f0c7afa8181728f3d}\label{classSNode_a153d2588fdbcdd9f0c7afa8181728f3d}} 
+\mbox{\hyperlink{classSNode_a153d2588fdbcdd9f0c7afa8181728f3d}{SNode}} (T const \&it, \mbox{\hyperlink{classSNode}{SNode}}$<$ T $>$\+::\mbox{\hyperlink{classSNode_ae3f625ceaa1eb1d654243e036ad68ed7}{Ref}} \&\mbox{\hyperlink{classSNode_ac6791c141a15f5c71b326587e4ef8b2b}{next}})
+\begin{DoxyCompactList}\small\item\em Create an empty \mbox{\hyperlink{classStack}{Stack}}. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classSNode_a6211b2c6dd64b418912f36e1db652dba}\label{classSNode_a6211b2c6dd64b418912f36e1db652dba}} 
+\mbox{\hyperlink{classSNode_a6211b2c6dd64b418912f36e1db652dba}{$\sim$\+SNode}} ()
+\begin{DoxyCompactList}\small\item\em Destroy a \mbox{\hyperlink{classSNode}{SNode}}. \end{DoxyCompactList}\item 
+static \mbox{\hyperlink{classSNode}{SNode}}$<$ T $>$\+::\mbox{\hyperlink{classSNode_ae3f625ceaa1eb1d654243e036ad68ed7}{Ref}} \mbox{\hyperlink{classSNode_ac2e033401301eeec1aec36002fbfbfbb}{create}} (T const \&it, \mbox{\hyperlink{classSNode}{SNode}}$<$ T $>$\+::\mbox{\hyperlink{classSNode_ae3f625ceaa1eb1d654243e036ad68ed7}{Ref}} \mbox{\hyperlink{classSNode_ac6791c141a15f5c71b326587e4ef8b2b}{next}}=nullptr)
+\begin{DoxyCompactList}\small\item\em Create a \mbox{\hyperlink{classSNode}{SNode}} using dynamic memory. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\subsubsection*{template$<$class T$>$\newline
+class SNode$<$ T $>$}
+
+a single link node. 
+
+Copy\+Right F. J. Madrid-\/\+Cuevas \href{mailto:fjmadrid@uco.es}{\texttt{ fjmadrid@uco.\+es}}
+
+Sólo se permite el uso de este código en la docencia de las asignaturas sobre Estructuras de Datos de la Universidad de Córdoba.
+
+Está prohibido su uso para cualquier otro objetivo. 
+
+\doxysubsection{Member Typedef Documentation}
+\mbox{\Hypertarget{classSNode_ae3f625ceaa1eb1d654243e036ad68ed7}\label{classSNode_ae3f625ceaa1eb1d654243e036ad68ed7}} 
+\index{SNode$<$ T $>$@{SNode$<$ T $>$}!Ref@{Ref}}
+\index{Ref@{Ref}!SNode$<$ T $>$@{SNode$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{Ref}{Ref}}
+{\footnotesize\ttfamily template$<$class T $>$ \\
+typedef std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classSNode}{SNode}}$<$T$>$ $>$ \mbox{\hyperlink{classSNode}{SNode}}$<$ T $>$\+::\mbox{\hyperlink{classSNode_ae3f625ceaa1eb1d654243e036ad68ed7}{Ref}}}
+
+
+
+Define a shared reference to a \mbox{\hyperlink{classSNode}{SNode}}. Manages the storage of a pointer, providing a limited garbage-\/collection facility, possibly sharing that management with other objects. 
+
+\begin{DoxySeeAlso}{See also}
+\href{http://www.cplusplus.com/reference/memory/shared_ptr/}{\texttt{ http\+://www.\+cplusplus.\+com/reference/memory/shared\+\_\+ptr/}} 
+\end{DoxySeeAlso}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classSNode_af914da9f986f4befba47c1662a5bb725}\label{classSNode_af914da9f986f4befba47c1662a5bb725}} 
+\index{SNode$<$ T $>$@{SNode$<$ T $>$}!SNode@{SNode}}
+\index{SNode@{SNode}!SNode$<$ T $>$@{SNode$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{SNode()}{SNode()}}
+{\footnotesize\ttfamily template$<$class T $>$ \\
+\mbox{\hyperlink{classSNode}{SNode}}$<$ T $>$\+::\mbox{\hyperlink{classSNode}{SNode}} (\begin{DoxyParamCaption}\item[{T const \&}]{it }\end{DoxyParamCaption})}
+
+
+
+Create a node. 
+
+\begin{DoxyPostcond}{Postcondition}
+!has\+\_\+next()
+\end{DoxyPostcond}
+Copy\+Right F. J. Madrid-\/\+Cuevas \href{mailto:fjmadrid@uco.es}{\texttt{ fjmadrid@uco.\+es}}
+
+Sólo se permite el uso de este código en la docencia de las asignaturas sobre Estructuras de Datos de la Universidad de Córdoba.
+
+Está prohibido su uso para cualquier otro objetivo. 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classSNode_ac2e033401301eeec1aec36002fbfbfbb}\label{classSNode_ac2e033401301eeec1aec36002fbfbfbb}} 
+\index{SNode$<$ T $>$@{SNode$<$ T $>$}!create@{create}}
+\index{create@{create}!SNode$<$ T $>$@{SNode$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{create()}{create()}}
+{\footnotesize\ttfamily template$<$class T $>$ \\
+\mbox{\hyperlink{classSNode}{SNode}}$<$ T $>$\+::\mbox{\hyperlink{classSNode_ae3f625ceaa1eb1d654243e036ad68ed7}{Ref}} \mbox{\hyperlink{classSNode}{SNode}}$<$ T $>$\+::create (\begin{DoxyParamCaption}\item[{T const \&}]{it,  }\item[{\mbox{\hyperlink{classSNode}{SNode}}$<$ T $>$\+::\mbox{\hyperlink{classSNode_ae3f625ceaa1eb1d654243e036ad68ed7}{Ref}}}]{next = {\ttfamily nullptr} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Create a \mbox{\hyperlink{classSNode}{SNode}} using dynamic memory. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em it} & the value save in the node. \\
+\hline
+{\em next} & link to the next node. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+a shared referente to the new node. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classSNode_ada740b3a4c6bd529b02ab9bc52cfc8a0}\label{classSNode_ada740b3a4c6bd529b02ab9bc52cfc8a0}} 
+\index{SNode$<$ T $>$@{SNode$<$ T $>$}!has\_next@{has\_next}}
+\index{has\_next@{has\_next}!SNode$<$ T $>$@{SNode$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{has\_next()}{has\_next()}}
+{\footnotesize\ttfamily template$<$class T $>$ \\
+bool \mbox{\hyperlink{classSNode}{SNode}}$<$ T $>$\+::has\+\_\+next}
+
+
+
+Has it a next node?. 
+
+\begin{DoxyReturn}{Returns}
+true if it has a next node. 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+slist.\+hpp\item 
+slist\+\_\+imp.\+hpp\end{DoxyCompactItemize}

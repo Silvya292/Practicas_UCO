@@ -1,0 +1,16 @@
+#HASH TABLE CHECK REMOVE
+create 16 4294967311 32 5
+insert 150.214.110.3 0
+insert 150.214.117.157 10
+insert 150.214.117.1 0
+insert 10.0.0.1 0
+insert 127.0.0.1 0
+insert 67.26.255.255 0
+insert 132.16.2.1 0
+insert 50.21.200.1 0
+show
+load_factor
+find 10.0.0.1
+remove
+load_factor
+find 10.0.0.1

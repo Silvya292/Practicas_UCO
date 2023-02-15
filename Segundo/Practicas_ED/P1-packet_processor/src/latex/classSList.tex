@@ -1,0 +1,491 @@
+\hypertarget{classSList}{}\doxysection{SList$<$ T $>$ Class Template Reference}
+\label{classSList}\index{SList$<$ T $>$@{SList$<$ T $>$}}
+
+
+ADT \mbox{\hyperlink{classSList}{SList}}. Models a Single linked list\mbox{[}T\mbox{]}.  
+
+
+
+
+{\ttfamily \#include $<$slist.\+hpp$>$}
+
+\doxysubsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+typedef std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classSList}{SList}}$<$ T $>$ $>$ \mbox{\hyperlink{classSList_a3b976b1e5ae3e85b17e2238558a5cb0f}{Ref}}
+\begin{DoxyCompactList}\small\item\em Define a shared reference to a \mbox{\hyperlink{classSNode}{SNode}}. Manages the storage of a pointer, providing a limited garbage-\/collection facility, possibly sharing that management with other objects. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions}
+\begin{Indent}\textbf{ Observers}\par
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classSList_a7cf0e2cc9c3de12068a9d55ea2f5e5b4}\label{classSList_a7cf0e2cc9c3de12068a9d55ea2f5e5b4}} 
+bool \mbox{\hyperlink{classSList_a7cf0e2cc9c3de12068a9d55ea2f5e5b4}{is\+\_\+empty}} () const
+\begin{DoxyCompactList}\small\item\em is the list empty?. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classSList_a289013da6391f694fdfc130be63d845f}\label{classSList_a289013da6391f694fdfc130be63d845f}} 
+size\+\_\+t \mbox{\hyperlink{classSList_a289013da6391f694fdfc130be63d845f}{size}} () const
+\begin{DoxyCompactList}\small\item\em Get the number of items in the list. \end{DoxyCompactList}\item 
+T \mbox{\hyperlink{classSList_aee15ab3e349aeb8923170666d77c03b8}{front}} () const
+\begin{DoxyCompactList}\small\item\em Get the head\textquotesingle{}s item of the list. \end{DoxyCompactList}\item 
+T \mbox{\hyperlink{classSList_a48564ff5398dc666710e9fbfb069c7f7}{current}} () const
+\begin{DoxyCompactList}\small\item\em get the current item. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classSList_a6997ea43e303c009f1893ef73a34b452}{has\+\_\+next}} () const
+\begin{DoxyCompactList}\small\item\em Is there a next item? \end{DoxyCompactList}\item 
+T \mbox{\hyperlink{classSList_a30815e0a46eb7de7ebb2e5c1e2fc97f1}{next}} () const
+\begin{DoxyCompactList}\small\item\em Get the next item. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classSList_aa032e8c992c30eb97d1e27bd372565f1}{has}} (T const \&it) const
+\begin{DoxyCompactList}\small\item\em Has it the item data? \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classSList_ad98a722c9f124c3b9ce4e943e136ec2b}{fold}} (std\+::ostream \&out) const
+\begin{DoxyCompactList}\small\item\em Fold to an output stream. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\end{Indent}
+\begin{Indent}\textbf{ Modifiers}\par
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{classSList_ae88c4f168833689614107bf6abe53904}{set\+\_\+current}} (T const \&new\+\_\+v)
+\begin{DoxyCompactList}\small\item\em Set a new value for current. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classSList_a8cac448bf02f3198766f50e12c737dd2}{push\+\_\+front}} (T const \&new\+\_\+it)
+\begin{DoxyCompactList}\small\item\em insert an item as the new list\textquotesingle{}s head. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classSList_a77c8c2b2403d5f39009ba9b0554cbbba}{insert}} (T const \&new\+\_\+it)
+\begin{DoxyCompactList}\small\item\em insert a new item after current. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classSList_a5f81d1f577ae255373f65b8efbca973a}{pop\+\_\+front}} ()
+\begin{DoxyCompactList}\small\item\em Remove the head. @prec !is\+\_\+empty() \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classSList_a3746babfb2fe28ffdf9ad3a14e187bed}{remove}} ()
+\begin{DoxyCompactList}\small\item\em Remove current item. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classSList_a5088d629c1181c62e3d41928a9b9e662}{goto\+\_\+next}} ()
+\begin{DoxyCompactList}\small\item\em Move the cursor to the next list\textquotesingle{}s item. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classSList_a8efa942d31df383c9ac69152cf501ff2}{goto\+\_\+first}} ()
+\begin{DoxyCompactList}\small\item\em Move the cursor to the list\textquotesingle{}s head. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classSList_ab157b7f6150b5c9eaf99a4341d7e4c70}{find}} (T const \&it)
+\begin{DoxyCompactList}\small\item\em Move the cursor to the first occurrence of a value from the head of the list. If the item is not found, the cursor will be at the end of the list. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classSList_ab22df4a1ecdc2f8501795d675ac71e97}{find\+\_\+next}} (T const \&it)
+\begin{DoxyCompactList}\small\item\em Move the cursor to the next occurrence of a value from current. If the item is not found, the cursor will be at the end of the list. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\end{Indent}
+\doxysubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classSNode}{SNode}}$<$ T $>$\+::\mbox{\hyperlink{classSList_a3b976b1e5ae3e85b17e2238558a5cb0f}{Ref}} \mbox{\hyperlink{classSList_a94a195d4633bafd9336b1ad6ee6a0fb3}{head}} () const
+\begin{DoxyCompactList}\small\item\em Get a reference to the head node. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classSNode}{SNode}}$<$ T $>$\+::\mbox{\hyperlink{classSList_a3b976b1e5ae3e85b17e2238558a5cb0f}{Ref}} \mbox{\hyperlink{classSList_a20a9e1db27ff331e0aa1b9be265f3653}{curr}} () const
+\begin{DoxyCompactList}\small\item\em Get a reference to the current node. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Life cicle.}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classSList_a407163a5e642a9f4a3193a5d0e2dd7df}{SList}} ()
+\begin{DoxyCompactList}\small\item\em Create an empty \mbox{\hyperlink{classStack}{Stack}}. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classSList_ae615e486c921a55f6c28e2603d7d3059}\label{classSList_ae615e486c921a55f6c28e2603d7d3059}} 
+\mbox{\hyperlink{classSList_ae615e486c921a55f6c28e2603d7d3059}{$\sim$\+SList}} ()
+\begin{DoxyCompactList}\small\item\em Destroy a \mbox{\hyperlink{classStack}{Stack}}. \end{DoxyCompactList}\item 
+static \mbox{\hyperlink{classSList}{SList}}$<$ T $>$\+::\mbox{\hyperlink{classSList_a3b976b1e5ae3e85b17e2238558a5cb0f}{Ref}} \mbox{\hyperlink{classSList_a7bcaef706b6b2a9f2385e9dfba0904c6}{create}} ()
+\begin{DoxyCompactList}\small\item\em Create a \mbox{\hyperlink{classSList}{SList}} using dynamic memory. \end{DoxyCompactList}\item 
+static \mbox{\hyperlink{classSList}{SList}}$<$ T $>$\+::\mbox{\hyperlink{classSList_a3b976b1e5ae3e85b17e2238558a5cb0f}{Ref}} \mbox{\hyperlink{classSList_a41ad306fe09ef6a393022c7b7a430e9d}{create}} (std\+::istream \&in) noexcept(false)
+\begin{DoxyCompactList}\small\item\em Create a \mbox{\hyperlink{classSList}{SList}} unfoldig from an input stream. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\subsubsection*{template$<$class T$>$\newline
+class SList$<$ T $>$}
+
+ADT \mbox{\hyperlink{classSList}{SList}}. Models a Single linked list\mbox{[}T\mbox{]}. 
+
+\doxysubsection{Member Typedef Documentation}
+\mbox{\Hypertarget{classSList_a3b976b1e5ae3e85b17e2238558a5cb0f}\label{classSList_a3b976b1e5ae3e85b17e2238558a5cb0f}} 
+\index{SList$<$ T $>$@{SList$<$ T $>$}!Ref@{Ref}}
+\index{Ref@{Ref}!SList$<$ T $>$@{SList$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{Ref}{Ref}}
+{\footnotesize\ttfamily template$<$class T $>$ \\
+typedef std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classSList}{SList}}$<$T$>$ $>$ \mbox{\hyperlink{classSList}{SList}}$<$ T $>$\+::\mbox{\hyperlink{classSList_a3b976b1e5ae3e85b17e2238558a5cb0f}{Ref}}}
+
+
+
+Define a shared reference to a \mbox{\hyperlink{classSNode}{SNode}}. Manages the storage of a pointer, providing a limited garbage-\/collection facility, possibly sharing that management with other objects. 
+
+\begin{DoxySeeAlso}{See also}
+\href{http://www.cplusplus.com/reference/memory/shared_ptr/}{\texttt{ http\+://www.\+cplusplus.\+com/reference/memory/shared\+\_\+ptr/}} 
+\end{DoxySeeAlso}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classSList_a407163a5e642a9f4a3193a5d0e2dd7df}\label{classSList_a407163a5e642a9f4a3193a5d0e2dd7df}} 
+\index{SList$<$ T $>$@{SList$<$ T $>$}!SList@{SList}}
+\index{SList@{SList}!SList$<$ T $>$@{SList$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{SList()}{SList()}}
+{\footnotesize\ttfamily template$<$class T $>$ \\
+\mbox{\hyperlink{classSList}{SList}}$<$ T $>$\+::\mbox{\hyperlink{classSList}{SList}}}
+
+
+
+Create an empty \mbox{\hyperlink{classStack}{Stack}}. 
+
+\begin{DoxyPostcond}{Postcondition}
+\mbox{\hyperlink{classSList_a7cf0e2cc9c3de12068a9d55ea2f5e5b4}{is\+\_\+empty()}} 
+\end{DoxyPostcond}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classSList_a7bcaef706b6b2a9f2385e9dfba0904c6}\label{classSList_a7bcaef706b6b2a9f2385e9dfba0904c6}} 
+\index{SList$<$ T $>$@{SList$<$ T $>$}!create@{create}}
+\index{create@{create}!SList$<$ T $>$@{SList$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{create()}{create()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily template$<$class T $>$ \\
+\mbox{\hyperlink{classSList}{SList}}$<$ T $>$\+::\mbox{\hyperlink{classSList_a3b976b1e5ae3e85b17e2238558a5cb0f}{Ref}} \mbox{\hyperlink{classSList}{SList}}$<$ T $>$\+::create\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Create a \mbox{\hyperlink{classSList}{SList}} using dynamic memory. 
+
+\begin{DoxyReturn}{Returns}
+a shared referente to the new slist. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classSList_a41ad306fe09ef6a393022c7b7a430e9d}\label{classSList_a41ad306fe09ef6a393022c7b7a430e9d}} 
+\index{SList$<$ T $>$@{SList$<$ T $>$}!create@{create}}
+\index{create@{create}!SList$<$ T $>$@{SList$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{create()}{create()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily template$<$class T $>$ \\
+\mbox{\hyperlink{classSList}{SList}}$<$ T $>$\+::\mbox{\hyperlink{classSList_a3b976b1e5ae3e85b17e2238558a5cb0f}{Ref}} \mbox{\hyperlink{classSList}{SList}}$<$ T $>$\+::create (\begin{DoxyParamCaption}\item[{std\+::istream \&}]{in }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [noexcept]}}
+
+
+
+Create a \mbox{\hyperlink{classSList}{SList}} unfoldig from an input stream. 
+
+The input format will be \char`\"{}\mbox{[}$\,$\mbox{]}\char`\"{} for the empty list or \char`\"{}\mbox{[}\char`\"{} item1 item2 ... item\+\_\+n \char`\"{}\mbox{]}\char`\"{} where item1 is the head.
+
+
+\begin{DoxyParams}{Parameters}
+{\em in} & is the input stream. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyWarning}{Warning}
+if the input format is not correct a std\+::runtime\+\_\+error with what message \char`\"{}\+Wrong input format.\char`\"{} will be reaised. 
+\end{DoxyWarning}
+\begin{DoxyReturn}{Returns}
+A shared referente to the new slist. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classSList_a20a9e1db27ff331e0aa1b9be265f3653}\label{classSList_a20a9e1db27ff331e0aa1b9be265f3653}} 
+\index{SList$<$ T $>$@{SList$<$ T $>$}!curr@{curr}}
+\index{curr@{curr}!SList$<$ T $>$@{SList$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{curr()}{curr()}}
+{\footnotesize\ttfamily template$<$class T $>$ \\
+\mbox{\hyperlink{classSNode}{SNode}}$<$T$>$\+::\mbox{\hyperlink{classSList_a3b976b1e5ae3e85b17e2238558a5cb0f}{Ref}} \mbox{\hyperlink{classSList}{SList}}$<$ T $>$\+::curr (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Get a reference to the current node. 
+
+\begin{DoxyReturn}{Returns}
+a reference to the current node. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classSList_a48564ff5398dc666710e9fbfb069c7f7}\label{classSList_a48564ff5398dc666710e9fbfb069c7f7}} 
+\index{SList$<$ T $>$@{SList$<$ T $>$}!current@{current}}
+\index{current@{current}!SList$<$ T $>$@{SList$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{current()}{current()}}
+{\footnotesize\ttfamily template$<$class T $>$ \\
+T \mbox{\hyperlink{classSList}{SList}}$<$ T $>$\+::current}
+
+
+
+get the current item. 
+
+\begin{DoxyPrecond}{Precondition}
+not \mbox{\hyperlink{classSList_a7cf0e2cc9c3de12068a9d55ea2f5e5b4}{is\+\_\+empty()}} 
+\end{DoxyPrecond}
+\mbox{\Hypertarget{classSList_ab157b7f6150b5c9eaf99a4341d7e4c70}\label{classSList_ab157b7f6150b5c9eaf99a4341d7e4c70}} 
+\index{SList$<$ T $>$@{SList$<$ T $>$}!find@{find}}
+\index{find@{find}!SList$<$ T $>$@{SList$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{find()}{find()}}
+{\footnotesize\ttfamily template$<$class T $>$ \\
+bool \mbox{\hyperlink{classSList}{SList}}$<$ T $>$\+::find (\begin{DoxyParamCaption}\item[{T const \&}]{it }\end{DoxyParamCaption})}
+
+
+
+Move the cursor to the first occurrence of a value from the head of the list. If the item is not found, the cursor will be at the end of the list. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em it} & is the value to be found. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true if it is found. 
+\end{DoxyReturn}
+\begin{DoxyPrecond}{Precondition}
+!is\+\_\+empty() 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondition}
+!ret\+\_\+val $\vert$$\vert$ item()==it 
+
+ret\+\_\+value $\vert$$\vert$ !has\+\_\+next() 
+\end{DoxyPostcond}
+\mbox{\Hypertarget{classSList_ab22df4a1ecdc2f8501795d675ac71e97}\label{classSList_ab22df4a1ecdc2f8501795d675ac71e97}} 
+\index{SList$<$ T $>$@{SList$<$ T $>$}!find\_next@{find\_next}}
+\index{find\_next@{find\_next}!SList$<$ T $>$@{SList$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{find\_next()}{find\_next()}}
+{\footnotesize\ttfamily template$<$class T $>$ \\
+bool \mbox{\hyperlink{classSList}{SList}}$<$ T $>$\+::find\+\_\+next (\begin{DoxyParamCaption}\item[{T const \&}]{it }\end{DoxyParamCaption})}
+
+
+
+Move the cursor to the next occurrence of a value from current. If the item is not found, the cursor will be at the end of the list. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em it} & is the value to be found. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true if it is found. 
+\end{DoxyReturn}
+\begin{DoxyPrecond}{Precondition}
+\mbox{\hyperlink{classSList_a6997ea43e303c009f1893ef73a34b452}{has\+\_\+next()}} 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondition}
+!ret\+\_\+val $\vert$$\vert$ item()==it 
+
+ret\+\_\+value $\vert$$\vert$ !has\+\_\+next() 
+\end{DoxyPostcond}
+\mbox{\Hypertarget{classSList_ad98a722c9f124c3b9ce4e943e136ec2b}\label{classSList_ad98a722c9f124c3b9ce4e943e136ec2b}} 
+\index{SList$<$ T $>$@{SList$<$ T $>$}!fold@{fold}}
+\index{fold@{fold}!SList$<$ T $>$@{SList$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{fold()}{fold()}}
+{\footnotesize\ttfamily template$<$class T $>$ \\
+void \mbox{\hyperlink{classSList}{SList}}$<$ T $>$\+::fold (\begin{DoxyParamCaption}\item[{std\+::ostream \&}]{out }\end{DoxyParamCaption}) const}
+
+
+
+Fold to an output stream. 
+
+The format will be \char`\"{}\mbox{[}$\,$\mbox{]}\char`\"{} for the empty list or \textquotesingle{}\mbox{[}\textquotesingle{} item1 item2 item3 ... item\+\_\+n \textquotesingle{}\mbox{]}\textquotesingle{} where item1 is the head.
+
+
+\begin{DoxyParams}{Parameters}
+{\em out} & is the output stream. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the output stream. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classSList_aee15ab3e349aeb8923170666d77c03b8}\label{classSList_aee15ab3e349aeb8923170666d77c03b8}} 
+\index{SList$<$ T $>$@{SList$<$ T $>$}!front@{front}}
+\index{front@{front}!SList$<$ T $>$@{SList$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{front()}{front()}}
+{\footnotesize\ttfamily template$<$class T $>$ \\
+T \mbox{\hyperlink{classSList}{SList}}$<$ T $>$\+::front}
+
+
+
+Get the head\textquotesingle{}s item of the list. 
+
+\begin{DoxyReturn}{Returns}
+the item at the head. 
+\end{DoxyReturn}
+\begin{DoxyPrecond}{Precondition}
+!is\+\_\+empty() 
+\end{DoxyPrecond}
+\mbox{\Hypertarget{classSList_a8efa942d31df383c9ac69152cf501ff2}\label{classSList_a8efa942d31df383c9ac69152cf501ff2}} 
+\index{SList$<$ T $>$@{SList$<$ T $>$}!goto\_first@{goto\_first}}
+\index{goto\_first@{goto\_first}!SList$<$ T $>$@{SList$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{goto\_first()}{goto\_first()}}
+{\footnotesize\ttfamily template$<$class T $>$ \\
+void \mbox{\hyperlink{classSList}{SList}}$<$ T $>$\+::goto\+\_\+first}
+
+
+
+Move the cursor to the list\textquotesingle{}s head. 
+
+\begin{DoxyPrecond}{Precondition}
+!is\+\_\+empty() 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondition}
+\mbox{\hyperlink{classSList_a48564ff5398dc666710e9fbfb069c7f7}{current()}}==\mbox{\hyperlink{classSList_aee15ab3e349aeb8923170666d77c03b8}{front()}} 
+\end{DoxyPostcond}
+\mbox{\Hypertarget{classSList_a5088d629c1181c62e3d41928a9b9e662}\label{classSList_a5088d629c1181c62e3d41928a9b9e662}} 
+\index{SList$<$ T $>$@{SList$<$ T $>$}!goto\_next@{goto\_next}}
+\index{goto\_next@{goto\_next}!SList$<$ T $>$@{SList$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{goto\_next()}{goto\_next()}}
+{\footnotesize\ttfamily template$<$class T $>$ \\
+void \mbox{\hyperlink{classSList}{SList}}$<$ T $>$\+::goto\+\_\+next}
+
+
+
+Move the cursor to the next list\textquotesingle{}s item. 
+
+\begin{DoxyPrecond}{Precondition}
+\mbox{\hyperlink{classSList_a6997ea43e303c009f1893ef73a34b452}{has\+\_\+next()}} 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondition}
+old.\+next()==\mbox{\hyperlink{classSList_a48564ff5398dc666710e9fbfb069c7f7}{current()}} 
+\end{DoxyPostcond}
+\mbox{\Hypertarget{classSList_aa032e8c992c30eb97d1e27bd372565f1}\label{classSList_aa032e8c992c30eb97d1e27bd372565f1}} 
+\index{SList$<$ T $>$@{SList$<$ T $>$}!has@{has}}
+\index{has@{has}!SList$<$ T $>$@{SList$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{has()}{has()}}
+{\footnotesize\ttfamily template$<$class T $>$ \\
+bool \mbox{\hyperlink{classSList}{SList}}$<$ T $>$\+::has (\begin{DoxyParamCaption}\item[{T const \&}]{it }\end{DoxyParamCaption}) const}
+
+
+
+Has it the item data? 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em it} & is the item to find. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true if the item is into the list. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classSList_a6997ea43e303c009f1893ef73a34b452}\label{classSList_a6997ea43e303c009f1893ef73a34b452}} 
+\index{SList$<$ T $>$@{SList$<$ T $>$}!has\_next@{has\_next}}
+\index{has\_next@{has\_next}!SList$<$ T $>$@{SList$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{has\_next()}{has\_next()}}
+{\footnotesize\ttfamily template$<$class T $>$ \\
+bool \mbox{\hyperlink{classSList}{SList}}$<$ T $>$\+::has\+\_\+next}
+
+
+
+Is there a next item? 
+
+\begin{DoxyReturn}{Returns}
+true if there is. 
+\end{DoxyReturn}
+\begin{DoxyPrecond}{Precondition}
+!is\+\_\+empty() 
+\end{DoxyPrecond}
+\mbox{\Hypertarget{classSList_a94a195d4633bafd9336b1ad6ee6a0fb3}\label{classSList_a94a195d4633bafd9336b1ad6ee6a0fb3}} 
+\index{SList$<$ T $>$@{SList$<$ T $>$}!head@{head}}
+\index{head@{head}!SList$<$ T $>$@{SList$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{head()}{head()}}
+{\footnotesize\ttfamily template$<$class T $>$ \\
+\mbox{\hyperlink{classSNode}{SNode}}$<$ T $>$\+::\mbox{\hyperlink{classSList_a3b976b1e5ae3e85b17e2238558a5cb0f}{Ref}} \mbox{\hyperlink{classSList}{SList}}$<$ T $>$\+::head\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Get a reference to the head node. 
+
+\begin{DoxyReturn}{Returns}
+a reference to the head node. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classSList_a77c8c2b2403d5f39009ba9b0554cbbba}\label{classSList_a77c8c2b2403d5f39009ba9b0554cbbba}} 
+\index{SList$<$ T $>$@{SList$<$ T $>$}!insert@{insert}}
+\index{insert@{insert}!SList$<$ T $>$@{SList$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{insert()}{insert()}}
+{\footnotesize\ttfamily template$<$class T $>$ \\
+void \mbox{\hyperlink{classSList}{SList}}$<$ T $>$\+::insert (\begin{DoxyParamCaption}\item[{T const \&}]{new\+\_\+it }\end{DoxyParamCaption})}
+
+
+
+insert a new item after current. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em new\+\_\+it} & is the item to insert. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyPostcond}{Postcondition}
+old.\+is\+\_\+empty() implies \mbox{\hyperlink{classSList_aee15ab3e349aeb8923170666d77c03b8}{front()}}==\mbox{\hyperlink{classSList_a48564ff5398dc666710e9fbfb069c7f7}{current()}}==new\+\_\+it 
+
+!old.\mbox{\hyperlink{classSList_a7cf0e2cc9c3de12068a9d55ea2f5e5b4}{is\+\_\+empty()}} implies \mbox{\hyperlink{classSList_a48564ff5398dc666710e9fbfb069c7f7}{current()}}==old.\+current() \&\& \mbox{\hyperlink{classSList_a6997ea43e303c009f1893ef73a34b452}{has\+\_\+next()}} \&\& \mbox{\hyperlink{classSList_a30815e0a46eb7de7ebb2e5c1e2fc97f1}{next()}}==new\+\_\+it 
+
+\mbox{\hyperlink{classSList_a289013da6391f694fdfc130be63d845f}{size()}}==(old.\+size()+1) 
+\end{DoxyPostcond}
+\mbox{\Hypertarget{classSList_a30815e0a46eb7de7ebb2e5c1e2fc97f1}\label{classSList_a30815e0a46eb7de7ebb2e5c1e2fc97f1}} 
+\index{SList$<$ T $>$@{SList$<$ T $>$}!next@{next}}
+\index{next@{next}!SList$<$ T $>$@{SList$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{next()}{next()}}
+{\footnotesize\ttfamily template$<$class T $>$ \\
+T \mbox{\hyperlink{classSList}{SList}}$<$ T $>$\+::next}
+
+
+
+Get the next item. 
+
+\begin{DoxyReturn}{Returns}
+the next item data. 
+\end{DoxyReturn}
+\begin{DoxyPrecond}{Precondition}
+\mbox{\hyperlink{classSList_a6997ea43e303c009f1893ef73a34b452}{has\+\_\+next()}} 
+\end{DoxyPrecond}
+\mbox{\Hypertarget{classSList_a5f81d1f577ae255373f65b8efbca973a}\label{classSList_a5f81d1f577ae255373f65b8efbca973a}} 
+\index{SList$<$ T $>$@{SList$<$ T $>$}!pop\_front@{pop\_front}}
+\index{pop\_front@{pop\_front}!SList$<$ T $>$@{SList$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{pop\_front()}{pop\_front()}}
+{\footnotesize\ttfamily template$<$class T $>$ \\
+void \mbox{\hyperlink{classSList}{SList}}$<$ T $>$\+::pop\+\_\+front}
+
+
+
+Remove the head. @prec !is\+\_\+empty() 
+
+\begin{DoxyPostcond}{Postcondition}
+\mbox{\hyperlink{classSList_a7cf0e2cc9c3de12068a9d55ea2f5e5b4}{is\+\_\+empty()}} $\vert$$\vert$ \mbox{\hyperlink{classSList_aee15ab3e349aeb8923170666d77c03b8}{front()}} == \char`\"{}next of old.\+front()\char`\"{}. 
+
+\mbox{\hyperlink{classSList_a289013da6391f694fdfc130be63d845f}{size()}}==(old.\+size()-\/1) 
+\end{DoxyPostcond}
+\mbox{\Hypertarget{classSList_a8cac448bf02f3198766f50e12c737dd2}\label{classSList_a8cac448bf02f3198766f50e12c737dd2}} 
+\index{SList$<$ T $>$@{SList$<$ T $>$}!push\_front@{push\_front}}
+\index{push\_front@{push\_front}!SList$<$ T $>$@{SList$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{push\_front()}{push\_front()}}
+{\footnotesize\ttfamily template$<$class T $>$ \\
+void \mbox{\hyperlink{classSList}{SList}}$<$ T $>$\+::push\+\_\+front (\begin{DoxyParamCaption}\item[{T const \&}]{new\+\_\+it }\end{DoxyParamCaption})}
+
+
+
+insert an item as the new list\textquotesingle{}s head. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em new\+\_\+it} & is the item to insert. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyPostcond}{Postcondition}
+\mbox{\hyperlink{classSList_aee15ab3e349aeb8923170666d77c03b8}{front()}}==new\+\_\+it 
+
+\mbox{\hyperlink{classSList_a289013da6391f694fdfc130be63d845f}{size()}}==(old.\+size()+1) 
+\end{DoxyPostcond}
+\mbox{\Hypertarget{classSList_a3746babfb2fe28ffdf9ad3a14e187bed}\label{classSList_a3746babfb2fe28ffdf9ad3a14e187bed}} 
+\index{SList$<$ T $>$@{SList$<$ T $>$}!remove@{remove}}
+\index{remove@{remove}!SList$<$ T $>$@{SList$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{remove()}{remove()}}
+{\footnotesize\ttfamily template$<$class T $>$ \\
+void \mbox{\hyperlink{classSList}{SList}}$<$ T $>$\+::remove}
+
+
+
+Remove current item. 
+
+\begin{DoxyPrecond}{Precondition}
+!is\+\_\+empty() 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondition}
+old.\+has\+\_\+next() implies \mbox{\hyperlink{classSList_a48564ff5398dc666710e9fbfb069c7f7}{current()}}==old.\+next() 
+
+!old.\mbox{\hyperlink{classSList_a6997ea43e303c009f1893ef73a34b452}{has\+\_\+next()}} implies \mbox{\hyperlink{classSList_a7cf0e2cc9c3de12068a9d55ea2f5e5b4}{is\+\_\+empty()}} $\vert$$\vert$ \mbox{\hyperlink{classSList_a48564ff5398dc666710e9fbfb069c7f7}{current()}}==\char`\"{}old previous item.\char`\"{} 
+
+\mbox{\hyperlink{classSList_a289013da6391f694fdfc130be63d845f}{size()}}==(old.\+size()-\/1) 
+\end{DoxyPostcond}
+\mbox{\Hypertarget{classSList_ae88c4f168833689614107bf6abe53904}\label{classSList_ae88c4f168833689614107bf6abe53904}} 
+\index{SList$<$ T $>$@{SList$<$ T $>$}!set\_current@{set\_current}}
+\index{set\_current@{set\_current}!SList$<$ T $>$@{SList$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{set\_current()}{set\_current()}}
+{\footnotesize\ttfamily template$<$class T $>$ \\
+void \mbox{\hyperlink{classSList}{SList}}$<$ T $>$\+::set\+\_\+current (\begin{DoxyParamCaption}\item[{T const \&}]{new\+\_\+v }\end{DoxyParamCaption})}
+
+
+
+Set a new value for current. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em new\+\_\+v} & is the new value. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyPrecond}{Precondition}
+!is\+\_\+empty() 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondition}
+item()==new\+\_\+v 
+\end{DoxyPostcond}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+slist.\+hpp\item 
+slist\+\_\+imp.\+hpp\end{DoxyCompactItemize}

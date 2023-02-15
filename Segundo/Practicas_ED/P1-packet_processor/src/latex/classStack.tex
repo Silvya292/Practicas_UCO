@@ -1,0 +1,206 @@
+\hypertarget{classStack}{}\doxysection{Stack$<$ T $>$ Class Template Reference}
+\label{classStack}\index{Stack$<$ T $>$@{Stack$<$ T $>$}}
+
+
+ADT \mbox{\hyperlink{classStack}{Stack}}. Models a \mbox{\hyperlink{classStack}{Stack}} using a single linked list$\ast$.  
+
+
+
+
+{\ttfamily \#include $<$stack.\+hpp$>$}
+
+\doxysubsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+typedef std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classStack}{Stack}}$<$ T $>$ $>$ \mbox{\hyperlink{classStack_a6606318a0cb4110852a9fedff34426e8}{Ref}}
+\begin{DoxyCompactList}\small\item\em Define a shared reference to a \mbox{\hyperlink{classStack}{Stack}}. Manages the storage of a pointer, providing a limited garbage-\/collection facility, possibly sharing that management with other objects. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions}
+\begin{Indent}\textbf{ Observers}\par
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classStack_a22739f1a314ccd6e85c4d268acaecbbe}\label{classStack_a22739f1a314ccd6e85c4d268acaecbbe}} 
+bool \mbox{\hyperlink{classStack_a22739f1a314ccd6e85c4d268acaecbbe}{is\+\_\+empty}} () const
+\begin{DoxyCompactList}\small\item\em is the list empty?. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classStack_aa34222dbc28544189d97add837498b71}\label{classStack_aa34222dbc28544189d97add837498b71}} 
+size\+\_\+t \mbox{\hyperlink{classStack_aa34222dbc28544189d97add837498b71}{size}} () const
+\begin{DoxyCompactList}\small\item\em Get the number of items in the stack. \end{DoxyCompactList}\item 
+T \mbox{\hyperlink{classStack_a1931814ad68db1eaedabdb37fa0fe494}{top}} () const
+\begin{DoxyCompactList}\small\item\em get the top item. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classStack_a173a1b63d7ff6fc9a9d6daf86e1410a8}{fold}} (std\+::ostream \&out) const
+\begin{DoxyCompactList}\small\item\em Fold the stack to an output stream. The output format is like the slist. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\end{Indent}
+\begin{Indent}\textbf{ Modifiers}\par
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{classStack_a2f72d87094e8830f7a0a4f507e1769bb}{push}} (const T \&new\+\_\+it)
+\begin{DoxyCompactList}\small\item\em Insert a new item. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classStack_a2723aec5c7e2611b97fcffeb7709de33}{pop}} ()
+\end{DoxyCompactItemize}
+\end{Indent}
+\doxysubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classStack_a2e0cd73739cfbed8b866e2e58d72e116}\label{classStack_a2e0cd73739cfbed8b866e2e58d72e116}} 
+\mbox{\hyperlink{classSList}{SList}}$<$ T $>$\+::\mbox{\hyperlink{classStack_a6606318a0cb4110852a9fedff34426e8}{Ref}} {\bfseries l\+\_\+}
+\end{DoxyCompactItemize}
+\doxysubsection*{Life cicle.}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classStack_aefee698059467258bbd79045aca62a63}{Stack}} ()
+\begin{DoxyCompactList}\small\item\em Create an empty \mbox{\hyperlink{classStack}{Stack}}. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classStack_a9e7a00875aefbdac560ab189b7bc61d1}\label{classStack_a9e7a00875aefbdac560ab189b7bc61d1}} 
+\mbox{\hyperlink{classStack_a9e7a00875aefbdac560ab189b7bc61d1}{$\sim$\+Stack}} ()
+\begin{DoxyCompactList}\small\item\em Destroy a \mbox{\hyperlink{classStack}{Stack}}. \end{DoxyCompactList}\item 
+static \mbox{\hyperlink{classStack}{Stack}}$<$ T $>$\+::\mbox{\hyperlink{classStack_a6606318a0cb4110852a9fedff34426e8}{Ref}} \mbox{\hyperlink{classStack_a5ea99076642782b131ffc47efc7aa712}{create}} ()
+\begin{DoxyCompactList}\small\item\em Create a \mbox{\hyperlink{classStack}{Stack}} using dynamic memory. \end{DoxyCompactList}\item 
+static \mbox{\hyperlink{classStack}{Stack}}$<$ T $>$\+::\mbox{\hyperlink{classStack_a6606318a0cb4110852a9fedff34426e8}{Ref}} \mbox{\hyperlink{classStack_a617b09798f3183b4914c167be23c4d35}{create}} (std\+::istream \&in) noexcept(false)
+\begin{DoxyCompactList}\small\item\em Create a \mbox{\hyperlink{classStack}{Stack}} from an input stream. The input format is the same of a single list. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\subsubsection*{template$<$class T$>$\newline
+class Stack$<$ T $>$}
+
+ADT \mbox{\hyperlink{classStack}{Stack}}. Models a \mbox{\hyperlink{classStack}{Stack}} using a single linked list$\ast$. 
+
+Copy\+Right F. J. Madrid-\/\+Cuevas \href{mailto:fjmadrid@uco.es}{\texttt{ fjmadrid@uco.\+es}}
+
+Sólo se permite el uso de este código en la docencia de las asignaturas sobre Estructuras de Datos de la Universidad de Córdoba.
+
+Está prohibido su uso para cualquier otro objetivo. 
+
+\doxysubsection{Member Typedef Documentation}
+\mbox{\Hypertarget{classStack_a6606318a0cb4110852a9fedff34426e8}\label{classStack_a6606318a0cb4110852a9fedff34426e8}} 
+\index{Stack$<$ T $>$@{Stack$<$ T $>$}!Ref@{Ref}}
+\index{Ref@{Ref}!Stack$<$ T $>$@{Stack$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{Ref}{Ref}}
+{\footnotesize\ttfamily template$<$class T $>$ \\
+typedef std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classStack}{Stack}}$<$T$>$ $>$ \mbox{\hyperlink{classStack}{Stack}}$<$ T $>$\+::\mbox{\hyperlink{classStack_a6606318a0cb4110852a9fedff34426e8}{Ref}}}
+
+
+
+Define a shared reference to a \mbox{\hyperlink{classStack}{Stack}}. Manages the storage of a pointer, providing a limited garbage-\/collection facility, possibly sharing that management with other objects. 
+
+\begin{DoxySeeAlso}{See also}
+\href{http://www.cplusplus.com/reference/memory/shared_ptr/}{\texttt{ http\+://www.\+cplusplus.\+com/reference/memory/shared\+\_\+ptr/}} 
+\end{DoxySeeAlso}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classStack_aefee698059467258bbd79045aca62a63}\label{classStack_aefee698059467258bbd79045aca62a63}} 
+\index{Stack$<$ T $>$@{Stack$<$ T $>$}!Stack@{Stack}}
+\index{Stack@{Stack}!Stack$<$ T $>$@{Stack$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{Stack()}{Stack()}}
+{\footnotesize\ttfamily template$<$class T $>$ \\
+\mbox{\hyperlink{classStack}{Stack}}$<$ T $>$\+::\mbox{\hyperlink{classStack}{Stack}}}
+
+
+
+Create an empty \mbox{\hyperlink{classStack}{Stack}}. 
+
+\begin{DoxyPostcond}{Postcondition}
+\mbox{\hyperlink{classStack_a22739f1a314ccd6e85c4d268acaecbbe}{is\+\_\+empty()}}
+\end{DoxyPostcond}
+Copy\+Right F. J. Madrid-\/\+Cuevas \href{mailto:fjmadrid@uco.es}{\texttt{ fjmadrid@uco.\+es}}
+
+Sólo se permite el uso de este código en la docencia de las asignaturas sobre Estructuras de Datos de la Universidad de Córdoba.
+
+Está prohibido su uso para cualquier otro objetivo. 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classStack_a5ea99076642782b131ffc47efc7aa712}\label{classStack_a5ea99076642782b131ffc47efc7aa712}} 
+\index{Stack$<$ T $>$@{Stack$<$ T $>$}!create@{create}}
+\index{create@{create}!Stack$<$ T $>$@{Stack$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{create()}{create()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily template$<$class T $>$ \\
+\mbox{\hyperlink{classStack}{Stack}}$<$ T $>$\+::\mbox{\hyperlink{classStack_a6606318a0cb4110852a9fedff34426e8}{Ref}} \mbox{\hyperlink{classStack}{Stack}}$<$ T $>$\+::create\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Create a \mbox{\hyperlink{classStack}{Stack}} using dynamic memory. 
+
+\begin{DoxyReturn}{Returns}
+a shared referente to the new stack. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classStack_a617b09798f3183b4914c167be23c4d35}\label{classStack_a617b09798f3183b4914c167be23c4d35}} 
+\index{Stack$<$ T $>$@{Stack$<$ T $>$}!create@{create}}
+\index{create@{create}!Stack$<$ T $>$@{Stack$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{create()}{create()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily template$<$class T $>$ \\
+\mbox{\hyperlink{classStack}{Stack}}$<$ T $>$\+::\mbox{\hyperlink{classStack_a6606318a0cb4110852a9fedff34426e8}{Ref}} \mbox{\hyperlink{classStack}{Stack}}$<$ T $>$\+::create (\begin{DoxyParamCaption}\item[{std\+::istream \&}]{in }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [noexcept]}}
+
+
+
+Create a \mbox{\hyperlink{classStack}{Stack}} from an input stream. The input format is the same of a single list. 
+
+\begin{DoxyReturn}{Returns}
+a shared referente to the new stack. 
+\end{DoxyReturn}
+\begin{DoxyWarning}{Warning}
+throw std\+::runtime\+\_\+error if wrong input format. 
+\end{DoxyWarning}
+\mbox{\Hypertarget{classStack_a173a1b63d7ff6fc9a9d6daf86e1410a8}\label{classStack_a173a1b63d7ff6fc9a9d6daf86e1410a8}} 
+\index{Stack$<$ T $>$@{Stack$<$ T $>$}!fold@{fold}}
+\index{fold@{fold}!Stack$<$ T $>$@{Stack$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{fold()}{fold()}}
+{\footnotesize\ttfamily template$<$class T $>$ \\
+void \mbox{\hyperlink{classStack}{Stack}}$<$ T $>$\+::fold (\begin{DoxyParamCaption}\item[{std\+::ostream \&}]{out }\end{DoxyParamCaption}) const}
+
+
+
+Fold the stack to an output stream. The output format is like the slist. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em out} & is the output stream. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classStack_a2723aec5c7e2611b97fcffeb7709de33}\label{classStack_a2723aec5c7e2611b97fcffeb7709de33}} 
+\index{Stack$<$ T $>$@{Stack$<$ T $>$}!pop@{pop}}
+\index{pop@{pop}!Stack$<$ T $>$@{Stack$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{pop()}{pop()}}
+{\footnotesize\ttfamily template$<$class T $>$ \\
+void \mbox{\hyperlink{classStack}{Stack}}$<$ T $>$\+::pop}
+
+Remove the top item. \begin{DoxyPrecond}{Precondition}
+not \mbox{\hyperlink{classStack_a22739f1a314ccd6e85c4d268acaecbbe}{is\+\_\+empty()}} 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondition}
+\mbox{\hyperlink{classStack_aa34222dbc28544189d97add837498b71}{size()}} = old.\+size()-\/1 
+\end{DoxyPostcond}
+\mbox{\Hypertarget{classStack_a2f72d87094e8830f7a0a4f507e1769bb}\label{classStack_a2f72d87094e8830f7a0a4f507e1769bb}} 
+\index{Stack$<$ T $>$@{Stack$<$ T $>$}!push@{push}}
+\index{push@{push}!Stack$<$ T $>$@{Stack$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{push()}{push()}}
+{\footnotesize\ttfamily template$<$class T $>$ \\
+void \mbox{\hyperlink{classStack}{Stack}}$<$ T $>$\+::push (\begin{DoxyParamCaption}\item[{const T \&}]{new\+\_\+it }\end{DoxyParamCaption})}
+
+
+
+Insert a new item. 
+
+\begin{DoxyPostcond}{Postcondition}
+\mbox{\hyperlink{classStack_a1931814ad68db1eaedabdb37fa0fe494}{top()}} == new\+\_\+it 
+
+\mbox{\hyperlink{classStack_aa34222dbc28544189d97add837498b71}{size()}} = old.\+size()+1 
+\end{DoxyPostcond}
+\mbox{\Hypertarget{classStack_a1931814ad68db1eaedabdb37fa0fe494}\label{classStack_a1931814ad68db1eaedabdb37fa0fe494}} 
+\index{Stack$<$ T $>$@{Stack$<$ T $>$}!top@{top}}
+\index{top@{top}!Stack$<$ T $>$@{Stack$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{top()}{top()}}
+{\footnotesize\ttfamily template$<$class T $>$ \\
+T \mbox{\hyperlink{classStack}{Stack}}$<$ T $>$\+::top}
+
+
+
+get the top item. 
+
+\begin{DoxyPrecond}{Precondition}
+not \mbox{\hyperlink{classStack_a22739f1a314ccd6e85c4d268acaecbbe}{is\+\_\+empty()}} 
+\end{DoxyPrecond}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+stack.\+hpp\item 
+stack\+\_\+imp.\+hpp\end{DoxyCompactItemize}

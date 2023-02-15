@@ -1,0 +1,20 @@
+Created table with size: 16
+Inserted pair <150.214.110.3:0>
+Inserted pair <150.214.117.157:10>
+Inserted pair <150.214.117.1:0>
+Inserted pair <10.0.0.1:0>
+Inserted pair <127.0.0.1:0>
+Inserted pair <67.26.255.255:0>
+Inserted pair <132.16.2.1:0>
+Inserted pair <50.21.200.1:0>
+Is valid?: True
+Current key: '50.21.200.1'.
+Current value: '0'.
+Has key '151.214.117.157'?: no
+Is valid?: True
+Current key: '50.21.200.1'.
+Current value: '0'.
+Has key '150.214.117.157'?: yes
+Is valid?: True
+Current key: '50.21.200.1'.
+Current value: '0'.

@@ -1,0 +1,6 @@
+/home/silvya292/Escritorio/UCO/Segundo/ED/Practica3/avl-tree/build/CMakeFiles/rebuild_cache.dir
+/home/silvya292/Escritorio/UCO/Segundo/ED/Practica3/avl-tree/build/CMakeFiles/edit_cache.dir
+/home/silvya292/Escritorio/UCO/Segundo/ED/Practica3/avl-tree/build/CMakeFiles/test_avltree.dir
+/home/silvya292/Escritorio/UCO/Segundo/ED/Practica3/avl-tree/build/CMakeFiles/test_avltnode.dir
+/home/silvya292/Escritorio/UCO/Segundo/ED/Practica3/avl-tree/build/CMakeFiles/test_bstree.dir
+/home/silvya292/Escritorio/UCO/Segundo/ED/Practica3/avl-tree/build/CMakeFiles/test_bstnode.dir

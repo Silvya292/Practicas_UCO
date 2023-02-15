@@ -1,0 +1,6 @@
+/home/silvya292/Escritorio/UCO/Segundo/ED/Practica1/packet_processor/build/CMakeFiles/rebuild_cache.dir
+/home/silvya292/Escritorio/UCO/Segundo/ED/Practica1/packet_processor/build/CMakeFiles/test_packet_processor.dir
+/home/silvya292/Escritorio/UCO/Segundo/ED/Practica1/packet_processor/build/CMakeFiles/edit_cache.dir
+/home/silvya292/Escritorio/UCO/Segundo/ED/Practica1/packet_processor/build/CMakeFiles/test_queue.dir
+/home/silvya292/Escritorio/UCO/Segundo/ED/Practica1/packet_processor/build/CMakeFiles/test_stack.dir
+/home/silvya292/Escritorio/UCO/Segundo/ED/Practica1/packet_processor/build/CMakeFiles/test_slist.dir

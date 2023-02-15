@@ -1,0 +1,21 @@
+#HASH TABLE CHECK INSERTION WITHOUT REHASHING
+create 16 4294967311 32 5
+insert 150.214.110.3 3
+load_factor
+insert 150.214.117.157 1
+load_factor
+insert 150.214.117.1 4
+load_factor
+insert 10.0.0.1 0
+load_factor
+insert 127.0.0.1 10
+load_factor
+insert 67.26.255.255 2
+load_factor
+insert 132.16.2.1 1
+load_factor
+insert 50.21.200.1 7
+load_factor
+show
+size
+

@@ -1,0 +1,4 @@
+DF scan from node 'a': a h g f i e d c b 
+DF spanning tree edges: a:h h:g g:f f:i i:e e:d d:c c:b 
+BF scan from node 'a': a b h c i d g e f 
+BF spanning tree edges: a:b a:h b:c b:i h:d h:g i:e i:f 

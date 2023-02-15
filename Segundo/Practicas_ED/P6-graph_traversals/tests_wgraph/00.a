@@ -1,0 +1,13 @@
+Created a graph with capacity = 3 and size=0
+Added node with data 'A'. Graph size =1
+Added node with data 'B'. Graph size =2
+Added node with data 'C'. Graph size =3
+Set weight of edge (A,B) to 1
+Set weight of edge (B,C) to 2
+Set weight of edge (C,A) to 3
+Set weight of edge (C,B) to 4
+Graph's edges:
+A -- 1 --> B
+B -- 2 --> C
+C -- 3 --> A
+C -- 4 --> B

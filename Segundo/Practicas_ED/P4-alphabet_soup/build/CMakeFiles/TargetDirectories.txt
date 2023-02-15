@@ -1,0 +1,5 @@
+/home/silvya292/Escritorio/UCO/Segundo/ED/Practica4/alphabet_soup/build/CMakeFiles/rebuild_cache.dir
+/home/silvya292/Escritorio/UCO/Segundo/ED/Practica4/alphabet_soup/build/CMakeFiles/edit_cache.dir
+/home/silvya292/Escritorio/UCO/Segundo/ED/Practica4/alphabet_soup/build/CMakeFiles/test_alphabet_soup_solver.dir
+/home/silvya292/Escritorio/UCO/Segundo/ED/Practica4/alphabet_soup/build/CMakeFiles/test_trie.dir
+/home/silvya292/Escritorio/UCO/Segundo/ED/Practica4/alphabet_soup/build/CMakeFiles/test_trie_node.dir

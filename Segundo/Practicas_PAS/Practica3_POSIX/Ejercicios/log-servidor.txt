@@ -1,0 +1,19 @@
+[2022-05-10, 09:46:06] ==> Número de caracteres leídos: 4
+[2022-05-10, 09:46:11] ==> exit
+[2022-05-10, 10:03:07] ==> Número de caracteres leídos: 4
+[2022-05-10, 10:03:11] ==> exit
+[2022-05-10, 10:04:34] ==> Número de caracteres leídos: 4
+[2022-05-10, 10:04:39] ==> exit
+[2022-05-10, 10:06:58] ==> Número de caracteres leídos: 4
+[2022-05-10, 10:07:25] ==> Número de caracteres leídos: 4
+[2022-05-10, 10:07:27] ==> exit
+[2022-05-10, 10:08:26] ==> Número de caracteres leídos: 4
+[2022-05-10, 10:08:26] ==> Número de caracteres leídos: 1
+[2022-05-10, 10:08:28] ==> exit
+[2022-05-10, 10:09:10] ==> Número de caracteres leídos: 4
+[2022-05-10, 10:09:13] ==> exit
+[2022-05-10, 10:10:19] ==> Número de caracteres leídos: 4
+[2022-05-10, 10:10:21] ==> Número de caracteres leídos: 4
+[2022-05-10, 10:10:21] ==> exit
+[2022-05-10, 10:16:38] ==> Número de caracteres leídos: 4
+[2022-05-10, 10:16:38] ==> exit

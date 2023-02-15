@@ -1,0 +1,71 @@
+\hypertarget{classPacketProcessor}{}\doxysection{Packet\+Processor Class Reference}
+\label{classPacketProcessor}\index{PacketProcessor@{PacketProcessor}}
+
+
+Models the packet processor.  
+
+
+
+
+{\ttfamily \#include $<$packet\+\_\+processor.\+hpp$>$}
+
+
+
+Collaboration diagram for Packet\+Processor\+:
+% FIG 0
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classPacketProcessor_ab99cb175a79c0bc1f193ba937959a807}{Packet\+Processor}} (size\+\_\+t size)
+\begin{DoxyCompactList}\small\item\em Create a packet processor with a queue for at most size packets. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classPacketProcessor_a45af7c1af7171abc479dc6c710e7718a}\label{classPacketProcessor_a45af7c1af7171abc479dc6c710e7718a}} 
+\mbox{\hyperlink{structResponse}{Response}} \mbox{\hyperlink{classPacketProcessor_a45af7c1af7171abc479dc6c710e7718a}{process}} (const \mbox{\hyperlink{structPacket}{Packet}} \&packet)
+\begin{DoxyCompactList}\small\item\em generate the response when a packet arrives. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+size\+\_\+t \mbox{\hyperlink{classPacketProcessor_ae2d06c81665f8e116b7a542a02e0a713}{\+\_\+max\+\_\+size}}
+\item 
+\mbox{\hyperlink{classQueue}{Queue}}$<$ int $>$ \mbox{\hyperlink{classPacketProcessor_a124abf77cd8cecda5d290a4f76ecf5bb}{\+\_\+finish\+\_\+time}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Models the packet processor. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classPacketProcessor_ab99cb175a79c0bc1f193ba937959a807}\label{classPacketProcessor_ab99cb175a79c0bc1f193ba937959a807}} 
+\index{PacketProcessor@{PacketProcessor}!PacketProcessor@{PacketProcessor}}
+\index{PacketProcessor@{PacketProcessor}!PacketProcessor@{PacketProcessor}}
+\doxysubsubsection{\texorpdfstring{PacketProcessor()}{PacketProcessor()}}
+{\footnotesize\ttfamily Packet\+Processor\+::\+Packet\+Processor (\begin{DoxyParamCaption}\item[{size\+\_\+t}]{size }\end{DoxyParamCaption})}
+
+
+
+Create a packet processor with a queue for at most size packets. 
+
+Copy\+Right F. J. Madrid-\/\+Cuevas \href{mailto:fjmadrid@uco.es}{\texttt{ fjmadrid@uco.\+es}}
+
+Sólo se permite el uso de este código en la docencia de las asignaturas sobre Estructuras de Datos de la Universidad de Córdoba.
+
+Está prohibido su uso para cualquier otro objetivo. 
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{classPacketProcessor_a124abf77cd8cecda5d290a4f76ecf5bb}\label{classPacketProcessor_a124abf77cd8cecda5d290a4f76ecf5bb}} 
+\index{PacketProcessor@{PacketProcessor}!\_finish\_time@{\_finish\_time}}
+\index{\_finish\_time@{\_finish\_time}!PacketProcessor@{PacketProcessor}}
+\doxysubsubsection{\texorpdfstring{\_finish\_time}{\_finish\_time}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classQueue}{Queue}}$<$int$>$ Packet\+Processor\+::\+\_\+finish\+\_\+time\hspace{0.3cm}{\ttfamily [protected]}}
+
+Saves the finishing times for packets waiting to be processed \mbox{\Hypertarget{classPacketProcessor_ae2d06c81665f8e116b7a542a02e0a713}\label{classPacketProcessor_ae2d06c81665f8e116b7a542a02e0a713}} 
+\index{PacketProcessor@{PacketProcessor}!\_max\_size@{\_max\_size}}
+\index{\_max\_size@{\_max\_size}!PacketProcessor@{PacketProcessor}}
+\doxysubsubsection{\texorpdfstring{\_max\_size}{\_max\_size}}
+{\footnotesize\ttfamily size\+\_\+t Packet\+Processor\+::\+\_\+max\+\_\+size\hspace{0.3cm}{\ttfamily [protected]}}
+
+Max number of packets. 
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+packet\+\_\+processor.\+hpp\item 
+packet\+\_\+processor.\+cpp\end{DoxyCompactItemize}

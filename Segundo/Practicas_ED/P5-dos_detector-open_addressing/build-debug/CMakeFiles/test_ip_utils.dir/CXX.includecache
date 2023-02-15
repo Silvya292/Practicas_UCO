@@ -1,0 +1,30 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/silvya292/Escritorio/UCO/Segundo/ED/Practica5/dos_detector-open_addressing/ip_utils.cpp
+algorithm
+-
+ip_utils.hpp
+/home/silvya292/Escritorio/UCO/Segundo/ED/Practica5/dos_detector-open_addressing/ip_utils.hpp
+cmath
+-
+
+/home/silvya292/Escritorio/UCO/Segundo/ED/Practica5/dos_detector-open_addressing/ip_utils.hpp
+cstdint
+-
+array
+-
+iostream
+-
+sstream
+-
+string
+-
+memory
+-
+

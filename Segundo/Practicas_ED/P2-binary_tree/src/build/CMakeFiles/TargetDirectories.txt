@@ -1,0 +1,4 @@
+/home/silvya292/Escritorio/UCO/Segundo/ED/Practica2/binary_tree/build/CMakeFiles/rebuild_cache.dir
+/home/silvya292/Escritorio/UCO/Segundo/ED/Practica2/binary_tree/build/CMakeFiles/edit_cache.dir
+/home/silvya292/Escritorio/UCO/Segundo/ED/Practica2/binary_tree/build/CMakeFiles/test_btree.dir
+/home/silvya292/Escritorio/UCO/Segundo/ED/Practica2/binary_tree/build/CMakeFiles/test_btree_node.dir

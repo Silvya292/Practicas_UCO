@@ -1,0 +1,46 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/silvya292/Escritorio/UCO/Segundo/ED/Practica4/alphabet_soup/test_trie_node.cpp
+ios
+-
+iostream
+-
+fstream
+-
+sstream
+-
+vector
+-
+exception
+-
+string
+-
+algorithm
+-
+trie_node.hpp
+/home/silvya292/Escritorio/UCO/Segundo/ED/Practica4/alphabet_soup/trie_node.hpp
+
+/home/silvya292/Escritorio/UCO/Segundo/ED/Practica4/alphabet_soup/trie_node.cpp
+cassert
+-
+sstream
+-
+cstdint
+-
+trie_node.hpp
+/home/silvya292/Escritorio/UCO/Segundo/ED/Practica4/alphabet_soup/trie_node.hpp
+
+/home/silvya292/Escritorio/UCO/Segundo/ED/Practica4/alphabet_soup/trie_node.hpp
+iostream
+-
+memory
+-
+map
+-
+

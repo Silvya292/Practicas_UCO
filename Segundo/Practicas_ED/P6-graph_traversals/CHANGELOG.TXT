@@ -1,0 +1,6 @@
+1.0:
+- Start release from code of curse 20/21.
+- Rewrited graph class as wgraph and recode the rest the code. We can access
+  to the Graph nodes/weights directly using labels, or by traversing with
+  cursors on edges with weight < inf.
+- Added a new ADT Item to manage data/key properly.

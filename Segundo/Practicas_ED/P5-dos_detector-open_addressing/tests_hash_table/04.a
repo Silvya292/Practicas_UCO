@@ -1,0 +1,15 @@
+Created table with size: 16
+Inserted pair <150.214.110.3:0>
+Inserted pair <150.214.117.157:10>
+Inserted pair <150.214.117.1:0>
+Inserted pair <10.0.0.1:0>
+Inserted pair <127.0.0.1:0>
+Inserted pair <67.26.255.255:0>
+Inserted pair <132.16.2.1:0>
+Inserted pair <50.21.200.1:0>
+Table: [127.0.0.1:0 132.16.2.1:0 10.0.0.1:0 150.214.110.3:0 150.214.117.157:10 150.214.117.1:0 50.21.200.1:0 67.26.255.255:0 ]
+load factor: 0.5
+Key '10.0.0.1' found.
+Removing key: 10.0.0.1 ...  ok.
+load factor: 0.5
+Key '10.0.0.1' not found.

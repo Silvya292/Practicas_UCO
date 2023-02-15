@@ -1,0 +1,6 @@
+make --dry-run --always-make --keep-going --print-directory
+make: Entering directory '/home/silvya292/Escritorio/UCO/Segundo/ED/Practica6/graph_traversals'
+make: Leaving directory '/home/silvya292/Escritorio/UCO/Segundo/ED/Practica6/graph_traversals'
+ 
+make: *** No targets specified and no makefile found.  Stop.
+

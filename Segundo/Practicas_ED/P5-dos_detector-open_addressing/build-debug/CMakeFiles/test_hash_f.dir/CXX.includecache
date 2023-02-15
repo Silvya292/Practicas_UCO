@@ -1,0 +1,26 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/silvya292/Escritorio/UCO/Segundo/ED/Practica5/dos_detector-open_addressing/hash.cpp
+hash.hpp
+/home/silvya292/Escritorio/UCO/Segundo/ED/Practica5/dos_detector-open_addressing/hash.hpp
+cassert
+-
+cstdlib
+-
+
+/home/silvya292/Escritorio/UCO/Segundo/ED/Practica5/dos_detector-open_addressing/hash.hpp
+cstddef
+-
+cstdint
+-
+memory
+-
+vector
+-
+

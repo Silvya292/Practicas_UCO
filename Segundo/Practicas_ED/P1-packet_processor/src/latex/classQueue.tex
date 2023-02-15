@@ -1,0 +1,177 @@
+\hypertarget{classQueue}{}\doxysection{Queue$<$ T $>$ Class Template Reference}
+\label{classQueue}\index{Queue$<$ T $>$@{Queue$<$ T $>$}}
+
+
+ADT \mbox{\hyperlink{classQueue}{Queue}}. Models a queue of T.  
+
+
+
+
+{\ttfamily \#include $<$queue.\+hpp$>$}
+
+\doxysubsection*{Public Member Functions}
+\begin{Indent}\textbf{ Life cicle.}\par
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classQueue_af73bb29c868f7b37f369c668f114bd9f}{Queue}} ()
+\begin{DoxyCompactList}\small\item\em Create an empty \mbox{\hyperlink{classQueue}{Queue}}. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classQueue_aa7eef1b427e24555780505de20e9acbc}\label{classQueue_aa7eef1b427e24555780505de20e9acbc}} 
+\mbox{\hyperlink{classQueue_aa7eef1b427e24555780505de20e9acbc}{$\sim$\+Queue}} ()
+\begin{DoxyCompactList}\small\item\em Destroy a \mbox{\hyperlink{classQueue}{Queue}}. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\end{Indent}
+\begin{Indent}\textbf{ Observers}\par
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classQueue_a354902adb7468d07891ba04a4003fc6d}\label{classQueue_a354902adb7468d07891ba04a4003fc6d}} 
+bool \mbox{\hyperlink{classQueue_a354902adb7468d07891ba04a4003fc6d}{is\+\_\+empty}} () const
+\begin{DoxyCompactList}\small\item\em is the list empty?. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classQueue_a91cbd71c4aeb13c6c7b6a9c8939636e3}\label{classQueue_a91cbd71c4aeb13c6c7b6a9c8939636e3}} 
+size\+\_\+t \mbox{\hyperlink{classQueue_a91cbd71c4aeb13c6c7b6a9c8939636e3}{size}} () const
+\begin{DoxyCompactList}\small\item\em Get the number of items in the queue. \end{DoxyCompactList}\item 
+T \mbox{\hyperlink{classQueue_a8554e7c5797d5a73fc2c4854a2d57b99}{front}} () const
+\begin{DoxyCompactList}\small\item\em get the front item (the oldest one). \end{DoxyCompactList}\item 
+T \mbox{\hyperlink{classQueue_af3d0b97363f6418a0350bde54d7344ff}{back}} () const
+\begin{DoxyCompactList}\small\item\em get the back item (the newest one). \end{DoxyCompactList}\end{DoxyCompactItemize}
+\end{Indent}
+\begin{Indent}\textbf{ Modifiers}\par
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{classQueue_aaba78599153780af0f4919793d463b35}{enque}} (const T \&new\+\_\+it)
+\begin{DoxyCompactList}\small\item\em Insert a new item. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classQueue_acdf4b7ced62c0616a67809178495e6fc}{deque}} ()
+\begin{DoxyCompactList}\small\item\em Remove the front item. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\end{Indent}
+\doxysubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{classQueue_a8d8592ad8c0fcc9c4598300c6d0c92c9}{flush\+\_\+input\+\_\+to\+\_\+output}} ()
+\begin{DoxyCompactList}\small\item\em Flush input stack into the output stack. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classQueue_aec0ccb2c8aba5182a824b36735b83711}\label{classQueue_aec0ccb2c8aba5182a824b36735b83711}} 
+\mbox{\hyperlink{classStack}{Stack}}$<$ T $>$\+::Ref {\bfseries input\+\_\+}
+\item 
+\mbox{\Hypertarget{classQueue_ab80f06fe4b934ae8341d765f22a99f36}\label{classQueue_ab80f06fe4b934ae8341d765f22a99f36}} 
+\mbox{\hyperlink{classStack}{Stack}}$<$ T $>$\+::Ref {\bfseries output\+\_\+}
+\item 
+\mbox{\Hypertarget{classQueue_aedd404757ffc4c600dca0a483f649e64}\label{classQueue_aedd404757ffc4c600dca0a483f649e64}} 
+T {\bfseries back\+\_\+}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\subsubsection*{template$<$class T$>$\newline
+class Queue$<$ T $>$}
+
+ADT \mbox{\hyperlink{classQueue}{Queue}}. Models a queue of T. 
+
+Copy\+Right F. J. Madrid-\/\+Cuevas \href{mailto:fjmadrid@uco.es}{\texttt{ fjmadrid@uco.\+es}}
+
+Sólo se permite el uso de este código en la docencia de las asignaturas sobre Estructuras de Datos de la Universidad de Córdoba.
+
+Está prohibido su uso para cualquier otro objetivo. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classQueue_af73bb29c868f7b37f369c668f114bd9f}\label{classQueue_af73bb29c868f7b37f369c668f114bd9f}} 
+\index{Queue$<$ T $>$@{Queue$<$ T $>$}!Queue@{Queue}}
+\index{Queue@{Queue}!Queue$<$ T $>$@{Queue$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{Queue()}{Queue()}}
+{\footnotesize\ttfamily template$<$class T $>$ \\
+\mbox{\hyperlink{classQueue}{Queue}}$<$ T $>$\+::\mbox{\hyperlink{classQueue}{Queue}}}
+
+
+
+Create an empty \mbox{\hyperlink{classQueue}{Queue}}. 
+
+\begin{DoxyPostcond}{Postcondition}
+\mbox{\hyperlink{classQueue_a354902adb7468d07891ba04a4003fc6d}{is\+\_\+empty()}}
+\end{DoxyPostcond}
+Copy\+Right F. J. Madrid-\/\+Cuevas \href{mailto:fjmadrid@uco.es}{\texttt{ fjmadrid@uco.\+es}}
+
+Sólo se permite el uso de este código en la docencia de las asignaturas sobre Estructuras de Datos de la Universidad de Córdoba.
+
+Está prohibido su uso para cualquier otro objetivo. 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classQueue_af3d0b97363f6418a0350bde54d7344ff}\label{classQueue_af3d0b97363f6418a0350bde54d7344ff}} 
+\index{Queue$<$ T $>$@{Queue$<$ T $>$}!back@{back}}
+\index{back@{back}!Queue$<$ T $>$@{Queue$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{back()}{back()}}
+{\footnotesize\ttfamily template$<$class T $>$ \\
+T \mbox{\hyperlink{classQueue}{Queue}}$<$ T $>$\+::back}
+
+
+
+get the back item (the newest one). 
+
+\begin{DoxyPrecond}{Precondition}
+not \mbox{\hyperlink{classQueue_a354902adb7468d07891ba04a4003fc6d}{is\+\_\+empty()}} 
+\end{DoxyPrecond}
+\mbox{\Hypertarget{classQueue_acdf4b7ced62c0616a67809178495e6fc}\label{classQueue_acdf4b7ced62c0616a67809178495e6fc}} 
+\index{Queue$<$ T $>$@{Queue$<$ T $>$}!deque@{deque}}
+\index{deque@{deque}!Queue$<$ T $>$@{Queue$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{deque()}{deque()}}
+{\footnotesize\ttfamily template$<$class T $>$ \\
+void \mbox{\hyperlink{classQueue}{Queue}}$<$ T $>$\+::deque}
+
+
+
+Remove the front item. 
+
+\begin{DoxyPrecond}{Precondition}
+not \mbox{\hyperlink{classQueue_a354902adb7468d07891ba04a4003fc6d}{is\+\_\+empty()}} 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondition}
+\mbox{\hyperlink{classQueue_a91cbd71c4aeb13c6c7b6a9c8939636e3}{size()}}==(old.\+size()-\/1) 
+\end{DoxyPostcond}
+\mbox{\Hypertarget{classQueue_aaba78599153780af0f4919793d463b35}\label{classQueue_aaba78599153780af0f4919793d463b35}} 
+\index{Queue$<$ T $>$@{Queue$<$ T $>$}!enque@{enque}}
+\index{enque@{enque}!Queue$<$ T $>$@{Queue$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{enque()}{enque()}}
+{\footnotesize\ttfamily template$<$class T $>$ \\
+void \mbox{\hyperlink{classQueue}{Queue}}$<$ T $>$\+::enque (\begin{DoxyParamCaption}\item[{const T \&}]{new\+\_\+it }\end{DoxyParamCaption})}
+
+
+
+Insert a new item. 
+
+\begin{DoxyPostcond}{Postcondition}
+\mbox{\hyperlink{classQueue_af3d0b97363f6418a0350bde54d7344ff}{back()}} == new\+\_\+it 
+
+\mbox{\hyperlink{classQueue_a91cbd71c4aeb13c6c7b6a9c8939636e3}{size()}}==(old.\+size()+1) 
+\end{DoxyPostcond}
+\mbox{\Hypertarget{classQueue_a8d8592ad8c0fcc9c4598300c6d0c92c9}\label{classQueue_a8d8592ad8c0fcc9c4598300c6d0c92c9}} 
+\index{Queue$<$ T $>$@{Queue$<$ T $>$}!flush\_input\_to\_output@{flush\_input\_to\_output}}
+\index{flush\_input\_to\_output@{flush\_input\_to\_output}!Queue$<$ T $>$@{Queue$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{flush\_input\_to\_output()}{flush\_input\_to\_output()}}
+{\footnotesize\ttfamily template$<$class T $>$ \\
+void \mbox{\hyperlink{classQueue}{Queue}}$<$ T $>$\+::flush\+\_\+input\+\_\+to\+\_\+output\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Flush input stack into the output stack. 
+
+\begin{DoxyPrecond}{Precondition}
+!is\+\_\+empty() 
+\end{DoxyPrecond}
+\mbox{\Hypertarget{classQueue_a8554e7c5797d5a73fc2c4854a2d57b99}\label{classQueue_a8554e7c5797d5a73fc2c4854a2d57b99}} 
+\index{Queue$<$ T $>$@{Queue$<$ T $>$}!front@{front}}
+\index{front@{front}!Queue$<$ T $>$@{Queue$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{front()}{front()}}
+{\footnotesize\ttfamily template$<$class T $>$ \\
+T \mbox{\hyperlink{classQueue}{Queue}}$<$ T $>$\+::front}
+
+
+
+get the front item (the oldest one). 
+
+\begin{DoxyPrecond}{Precondition}
+not \mbox{\hyperlink{classQueue_a354902adb7468d07891ba04a4003fc6d}{is\+\_\+empty()}} 
+\end{DoxyPrecond}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+queue.\+hpp\item 
+queue\+\_\+imp.\+hpp\end{DoxyCompactItemize}
