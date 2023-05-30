@@ -1,0 +1,350 @@
+<?xml version="1.0"?>
+
+
+<!DOCTYPE rdf:RDF [
+    <!ENTITY owl "http://www.w3.org/2002/07/owl#" >
+    <!ENTITY xsd "http://www.w3.org/2001/XMLSchema#" >
+    <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema#" >
+    <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns#" >
+    <!ENTITY examenMayo "http://www.examenMayo.com/ontologies/examenMayo.owl#" >
+]>
+
+
+<rdf:RDF xmlns="http://www.examenMayo.com/ontologies/examenMayo.ow#"
+     xml:base="http://www.examenMayo.com/ontologies/examenMayo.ow"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:examenMayo="http://www.examenMayo.com/ontologies/examenMayo.owl#">
+    <owl:Ontology rdf:about="http://www.examenMayo.com/ontologies/examenMayo.owl">
+        <rdfs:comment>Ontología sobre la compraventa de inmuebles urbanos.</rdfs:comment>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.examenMayo.com/ontologies/examenMayo.owl#tieneArea -->
+
+    <owl:ObjectProperty rdf:about="&examenMayo;tieneArea">
+        <rdfs:range rdf:resource="&examenMayo;Area"/>
+        <rdfs:domain rdf:resource="&examenMayo;InmuebleUrbano"/>
+        <rdfs:subPropertyOf rdf:resource="&examenMayo;tieneCaracteristicas"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.examenMayo.com/ontologies/examenMayo.owl#tieneCaracteristicas -->
+
+    <owl:ObjectProperty rdf:about="&examenMayo;tieneCaracteristicas"/>
+    
+
+
+    <!-- http://www.examenMayo.com/ontologies/examenMayo.owl#tieneComprador -->
+
+    <owl:ObjectProperty rdf:about="&examenMayo;tieneComprador">
+        <rdfs:range rdf:resource="&examenMayo;Comprador"/>
+        <rdfs:domain rdf:resource="&examenMayo;InmuebleUrbano"/>
+        <owl:propertyDisjointWith rdf:resource="&examenMayo;tieneVendedor"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.examenMayo.com/ontologies/examenMayo.owl#tieneHabitaciones -->
+
+    <owl:ObjectProperty rdf:about="&examenMayo;tieneHabitaciones">
+        <rdfs:range rdf:resource="&examenMayo;Habitaciones"/>
+        <rdfs:domain rdf:resource="&examenMayo;InmuebleUrbano"/>
+        <rdfs:subPropertyOf rdf:resource="&examenMayo;tieneCaracteristicas"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.examenMayo.com/ontologies/examenMayo.owl#tienePrecio -->
+
+    <owl:ObjectProperty rdf:about="&examenMayo;tienePrecio">
+        <rdfs:domain rdf:resource="&examenMayo;InmuebleUrbano"/>
+        <rdfs:range rdf:resource="&examenMayo;Precio"/>
+        <rdfs:subPropertyOf rdf:resource="&examenMayo;tieneCaracteristicas"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.examenMayo.com/ontologies/examenMayo.owl#tieneUbicacion -->
+
+    <owl:ObjectProperty rdf:about="&examenMayo;tieneUbicacion">
+        <rdfs:domain rdf:resource="&examenMayo;InmuebleUrbano"/>
+        <rdfs:range rdf:resource="&examenMayo;Ubicacion"/>
+        <rdfs:subPropertyOf rdf:resource="&examenMayo;tieneCaracteristicas"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.examenMayo.com/ontologies/examenMayo.owl#tieneVendedor -->
+
+    <owl:ObjectProperty rdf:about="&examenMayo;tieneVendedor">
+        <rdfs:domain rdf:resource="&examenMayo;InmuebleUrbano"/>
+        <rdfs:range rdf:resource="&examenMayo;Vendedor"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.examenMayo.com/ontologies/examenMayo.owl#tieneArea -->
+
+    <owl:DatatypeProperty rdf:about="&examenMayo;tieneArea"/>
+    
+
+
+    <!-- http://www.examenMayo.com/ontologies/examenMayo.owl#tieneHabitaciones -->
+
+    <owl:DatatypeProperty rdf:about="&examenMayo;tieneHabitaciones"/>
+    
+
+
+    <!-- http://www.examenMayo.com/ontologies/examenMayo.owl#tienePrecio -->
+
+    <owl:DatatypeProperty rdf:about="&examenMayo;tienePrecio"/>
+    
+
+
+    <!-- http://www.examenMayo.com/ontologies/examenMayo.owl#tieneUbicacion -->
+
+    <owl:DatatypeProperty rdf:about="&examenMayo;tieneUbicacion"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.examenMayo.com/ontologies/examenMayo.owl#Area -->
+
+    <owl:Class rdf:about="&examenMayo;Area">
+        <rdfs:subClassOf rdf:resource="&examenMayo;CaracteristicasInmueble"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.examenMayo.com/ontologies/examenMayo.owl#CaracteristicasInmueble -->
+
+    <owl:Class rdf:about="&examenMayo;CaracteristicasInmueble"/>
+    
+
+
+    <!-- http://www.examenMayo.com/ontologies/examenMayo.owl#Comercial -->
+
+    <owl:Class rdf:about="&examenMayo;Comercial">
+        <rdfs:subClassOf rdf:resource="&examenMayo;InmuebleUrbano"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&examenMayo;tieneHabitaciones"/>
+                <owl:onClass rdf:resource="&examenMayo;Habitaciones"/>
+                <owl:qualifiedCardinality rdf:datatype="&xsd;nonNegativeInteger">0</owl:qualifiedCardinality>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <owl:disjointWith rdf:resource="&examenMayo;Vivienda"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.examenMayo.com/ontologies/examenMayo.owl#Comprador -->
+
+    <owl:Class rdf:about="&examenMayo;Comprador">
+        <rdfs:subClassOf rdf:resource="&examenMayo;Persona"/>
+        <owl:disjointWith rdf:resource="&examenMayo;Vendedor"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.examenMayo.com/ontologies/examenMayo.owl#Habitaciones -->
+
+    <owl:Class rdf:about="&examenMayo;Habitaciones">
+        <rdfs:subClassOf rdf:resource="&examenMayo;CaracteristicasInmueble"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.examenMayo.com/ontologies/examenMayo.owl#InmuebleUrbano -->
+
+    <owl:Class rdf:about="&examenMayo;InmuebleUrbano">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&examenMayo;tieneComprador"/>
+                <owl:allValuesFrom rdf:resource="&examenMayo;Comprador"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&examenMayo;tieneVendedor"/>
+                <owl:allValuesFrom rdf:resource="&examenMayo;Vendedor"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&examenMayo;tieneCaracteristicas"/>
+                <owl:someValuesFrom rdf:resource="&examenMayo;CaracteristicasInmueble"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.examenMayo.com/ontologies/examenMayo.owl#Persona -->
+
+    <owl:Class rdf:about="&examenMayo;Persona"/>
+    
+
+
+    <!-- http://www.examenMayo.com/ontologies/examenMayo.owl#Precio -->
+
+    <owl:Class rdf:about="&examenMayo;Precio">
+        <rdfs:subClassOf rdf:resource="&examenMayo;CaracteristicasInmueble"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.examenMayo.com/ontologies/examenMayo.owl#Ubicacion -->
+
+    <owl:Class rdf:about="&examenMayo;Ubicacion">
+        <rdfs:subClassOf rdf:resource="&examenMayo;CaracteristicasInmueble"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.examenMayo.com/ontologies/examenMayo.owl#Vendedor -->
+
+    <owl:Class rdf:about="&examenMayo;Vendedor">
+        <rdfs:subClassOf rdf:resource="&examenMayo;Persona"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.examenMayo.com/ontologies/examenMayo.owl#Vivienda -->
+
+    <owl:Class rdf:about="&examenMayo;Vivienda">
+        <rdfs:subClassOf rdf:resource="&examenMayo;InmuebleUrbano"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&examenMayo;tieneHabitaciones"/>
+                <owl:someValuesFrom rdf:resource="&examenMayo;Habitaciones"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.examenMayo.com/ontologies/examenMayo.owl#Casa -->
+
+    <owl:NamedIndividual rdf:about="&examenMayo;Casa">
+        <rdf:type rdf:resource="&examenMayo;Vivienda"/>
+        <examenMayo:tieneHabitaciones rdf:datatype="&xsd;int">3</examenMayo:tieneHabitaciones>
+        <examenMayo:tieneArea rdf:datatype="&xsd;float">90.5</examenMayo:tieneArea>
+        <examenMayo:tienePrecio rdf:datatype="&xsd;float">90000.0</examenMayo:tienePrecio>
+        <examenMayo:tieneUbicacion rdf:datatype="&xsd;string">Madrid</examenMayo:tieneUbicacion>
+        <examenMayo:tieneVendedor rdf:resource="&examenMayo;Marta"/>
+        <examenMayo:tieneComprador rdf:resource="&examenMayo;Rafael"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.examenMayo.com/ontologies/examenMayo.owl#Casa2 -->
+
+    <owl:NamedIndividual rdf:about="&examenMayo;Casa2">
+        <rdf:type rdf:resource="&examenMayo;Vivienda"/>
+        <examenMayo:tieneHabitaciones rdf:datatype="&xsd;integer">2</examenMayo:tieneHabitaciones>
+        <examenMayo:tienePrecio rdf:datatype="&xsd;float">68000.0</examenMayo:tienePrecio>
+        <examenMayo:tieneArea rdf:datatype="&xsd;float">70.0</examenMayo:tieneArea>
+        <examenMayo:tieneUbicacion rdf:datatype="&xsd;string">Valencia</examenMayo:tieneUbicacion>
+        <examenMayo:tieneComprador rdf:resource="&examenMayo;Elena"/>
+        <examenMayo:tieneVendedor rdf:resource="&examenMayo;Rafael"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.examenMayo.com/ontologies/examenMayo.owl#Elena -->
+
+    <owl:NamedIndividual rdf:about="&examenMayo;Elena">
+        <rdf:type rdf:resource="&examenMayo;Vendedor"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.examenMayo.com/ontologies/examenMayo.owl#Marta -->
+
+    <owl:NamedIndividual rdf:about="&examenMayo;Marta">
+        <rdf:type rdf:resource="&examenMayo;Vendedor"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.examenMayo.com/ontologies/examenMayo.owl#Rafael -->
+
+    <owl:NamedIndividual rdf:about="&examenMayo;Rafael">
+        <rdf:type rdf:resource="&examenMayo;Comprador"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.examenMayo.com/ontologies/examenMayo.owl#Tienda -->
+
+    <owl:NamedIndividual rdf:about="&examenMayo;Tienda">
+        <rdf:type rdf:resource="&examenMayo;Comercial"/>
+        <examenMayo:tienePrecio rdf:datatype="&xsd;float">150000.0</examenMayo:tienePrecio>
+        <examenMayo:tieneArea rdf:datatype="&xsd;float">70.4</examenMayo:tieneArea>
+        <examenMayo:tieneUbicacion rdf:datatype="&xsd;string">Sevilla</examenMayo:tieneUbicacion>
+        <examenMayo:tieneVendedor rdf:resource="&examenMayo;Elena"/>
+        <examenMayo:tieneComprador rdf:resource="&examenMayo;Rafael"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.examenMayo.com/ontologies/examenMayo.owl#Tienda2 -->
+
+    <owl:NamedIndividual rdf:about="&examenMayo;Tienda2">
+        <rdf:type rdf:resource="&examenMayo;Comercial"/>
+    </owl:NamedIndividual>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 3.4.2) http://owlapi.sourceforge.net -->
+

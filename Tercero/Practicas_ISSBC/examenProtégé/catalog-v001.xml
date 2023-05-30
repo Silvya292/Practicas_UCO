@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<catalog prefer="public" xmlns="urn:oasis:names:tc:entity:xmlns:xml:catalog">
+    <group id="Folder Repository, directory=, recursive=true, Auto-Update=true, version=2" prefer="public" xml:base="">
+        <uri id="Automatically generated entry, Timestamp=1683188082546" name="http://www.examenMayo.com/ontologies/examenMayo.ow" uri="examenMayo.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1683188082546" name="http://www.hamburguer.com/ontologies/hamburguer.owl" uri="UCO/Tercero/2º%20Cuatrimestre/ISSBC/Protégé/hamburguer.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1683188082546" name="http://www.pizza.com/ontologies/pizza.owl" uri="UCO/Tercero/2º%20Cuatrimestre/ISSBC/Protégé/pizza.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1683188082546" name="shadowed:http://www.examenMayo.com/ontologies/examenMayo.ow" uri="a/examenMayo2.owl"/>
+    </group>
+</catalog>
